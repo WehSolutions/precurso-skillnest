@@ -5,7 +5,8 @@ class Usuario:
         self.apellido = apellido
         self.email = email
         self.tarjeta = TarjetaCredito(0,20000,0.015)
-
+    """
+    / Este bloque ya no tiene sentido ya que estas operaciones se pueden hacer directo con la clase TarjetaCredito
     def hacer_compra(self, monto):  #recibe como argumento el monto de la compra
         if (self.limite_credito - self.saldo_pagar) >= monto:
             self.saldo_pagar += monto   #el saldo a pagar del usuario aumenta en la cantidad del valor recibido
@@ -24,6 +25,8 @@ class Usuario:
 
     def transferir_deuda(self,otro_usurio,monto):
         pass
+    /
+    """
    
 """"
 usuario1 = Usuario("Miyagui","Soto","")
